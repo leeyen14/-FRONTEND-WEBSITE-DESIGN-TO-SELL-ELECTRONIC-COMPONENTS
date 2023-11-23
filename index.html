@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/image/icon.jpg">
+    <title>Linh Kiện Vui</title>
+</head>
+<body style=" ">
+    <nav id="nav" class="nav">
+        <div class="navigation">
+            <div class="right-nav">
+                <a href="" class="icon-nav">
+                    <img src="/image/icon.jpg" alt="Linh Kiện Vui" class="icon-navigation">
+                </a>
+            </div>
+
+            <div class="center-nav">
+                <div class="menu-nav">
+                    <ul class="navbar">
+                        <li class="item-nav"><a href="" class="nav-link">Products
+                            <i class="fa-sharp fa-solid fa-caret-down" style=""></i>
+                        </a></li>
+                        <li class="item-nav"><a href="" class="nav-link">Manufactures</a></li>
+                        <li class="item-nav"><a href="" class="nav-link">Suppliers</a></li>
+                        <li class="item-nav"><a href="" class="nav-link">Tools
+                            <i class="fa-sharp fa-solid fa-caret-down" style=""></i>
+                        </a></li>
+                        <li class="item-nav"><a href="" class="nav-link">FAQ</a></li>
+                        <li class="item-nav"><a href="" class="nav-link">Contacts Us</a></li>
+                        <li class="item-nav"><a href="" class="nav-link">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #ec9898;"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-nav">
+                <div class="right-navbar">
+                    <div class="right1">
+                        <a href="" class="mail-icon">
+                            <i class="icon fa-sharp fa-regular fa-envelope" style="color: #FFFF; font-size: 25px;"></i>
+                        </a>
+                    </div>
+                    <div class="right2">
+                        <a href="" class="mail-icon">
+                            <button class="cart">
+                                <i class="fa-solid fa-cart-shopping" style="color: #FFFF; font-size: 20px;"></i>
+                                <span class="count-circle" id="displayCartCounts">0</span>
+                            </button>
+                            <span class="dash">|</span>
+                        </a>
+                    </div>
+                    <div class="left1">
+                        <div>
+                            <a href="" class="signin">
+                                <input type="button" class="sign" value="Sign In">
+                            </a>
+                            <a href="" class="signup">
+                                <input type="button" class="sign" value="Sign Up">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<script>
+    //Cuộn xuống đổi màu thanh taskbar
+    window.addEventListener('scroll', function() {
+    var taskbar = document.getElementById('nav');
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > 0) {
+        taskbar.classList.add('scrolled');
+    } else {
+        taskbar.classList.remove('scrolled');
+    }
+});
+
+</script>
+
+
+
+    <header id="header" class="header">
+        <div class="top-footer">
+            <div class="signalture">
+                <h1 class="signalture-bold">
+                    LINH KIỆN VUI - UY TÍN LÀ HÀNG ĐẦU!
+                </h1>
+                <h2 class="signalture-regular">
+                    Linh kiện vui - thị trường dành cho các nhà phân phối chất bán dẫn và linh kiện điện tử.
+                </h2>
+                <div id="search-header" class="search-header">
+                    <form action="" class="input-search" id="input-search">
+                        <div class="nhaplieu">
+                            <div class="search-bar">
+                                <input type="text" class="bar-search" placeholder="Nhập từ khóa#">
+                            </div>
+                            <div class="button-search">
+                                <button class="search-button">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="/image/Anh SVg/globe.svg" alt="" style="">
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="infor">
+                <div class="web-icon">
+                    <img src="/image/Anh SVg/icon1.svg" alt="" style="width:60px;">
+                </div>
+                <div class="infor-basic">
+                    <p class="information">
+                        <span class="title-inf">21+</span>
+                    </p>
+                    <p class="extra-note">
+                        Sales & Marketing Experience
+                    </p>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="web-icon">
+                    <img src="/image/Anh SVg/icon3.svg" alt="" style="width:60px;">
+                </div>
+                <div class="infor-basic">
+                    <p class="information">
+                        <span class="title-inf">21+</span>
+                    </p>
+                    <p class="extra-note">
+                        Sales & Marketing Experience
+                    </p>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="web-icon">
+                    <img src="/image/Anh SVg/icon4.svg" alt="" style="width:60px;">
+                </div>
+                <div class="infor-basic">
+                    <p class="information">
+                        <span class="title-inf">21+</span>
+                    </p>
+                    <p class="extra-note">
+                        Sales & Marketing Experience
+                    </p>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="web-icon">
+                    <img src="/image/Anh SVg/icon5.svg" alt="" style="width:60px;">
+                </div>
+                <div class="infor-basic">
+                    <p class="information">
+                        <span class="title-inf">21+</span>
+                    </p>
+                    <p class="extra-note">
+                        Sales & Marketing Experience
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="container" class="container">
+        <section class="popular-com">
+            <p class="title-popurlar">
+                CÁC SẢN PHẢM TỐP BÁN CHẠY
+            </p>
+            <div class="list-popular">
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/VDK.png" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    IC - VĐK
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/modulcambien.jpg" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Modul Cảm Biến
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/led.jpg" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Led - Đèn
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/pinnguon.jpg" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Pin & Nguồn
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/ketnoi.jpg" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Kết Nối
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/linhkiendientu.png" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Linh Kiện Mạch
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/phukiendientu.png" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Phụ Kiện Đi Kèm
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/thietbiphutro.jpg" alt="" style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;">
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Sản Phẩm Hỗ Trợ
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-p">
+                    <a href="" class="link-product">
+                        <div class="pot-cart">
+                            <img src="/image/status bar/tulammach.png" alt=""style="width:30px;;height:30px ; margin-right:10px; margin-top: 15px;" >
+                            <font class="inf-product">
+                                <font class="title-product">
+                                    Tự Làm Mạch
+                                </font>
+                            </font>
+                        </div>
+                    </a>
+                </div>
+ 
+
+            </div> 
+            <div class="see-more">
+                <a href="" class="see">
+                    <input type="button" class="more" placeholder="Xem tất cả" value="Xem thêm"></input>
+                </a>
+            </div>
+        </section>
+        <div id="flash-sale" class="flash-sale">
+            <div class="Sales">
+                <div class="title-sales">
+                    <div class="left-title">
+                        <div class="left_content-title">
+                            <div class="content-left">
+                                <div class="chuflashsale"></div>
+                                <div id="countdown" style="margin-left: 20px;font-size: 27px;
+                                font-weight: bold; ">
+
+                                    <script>
+                                          function countdown() {
+                                            var now = new Date();
+                                            var endTime = now.getTime() + 60 * 60 * 1000; // Thời gian hiện tại + 60 phút
+
+                                            var countdownElement = document.getElementById('countdown');
+
+                                            var countdownInterval = setInterval(function() {
+                                                var currentTime = new Date().getTime();
+                                                var distance = endTime - currentTime;
+
+                                                var hours = Math.floor(distance / (1000 * 60 * 60));
+                                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                                countdownElement.innerHTML = hours + " : " + minutes + " : " + seconds + "";
+
+                                                if (distance < 0) {
+                                                clearInterval(countdownInterval);
+                                                countdownElement.innerHTML = "Đếm ngược đã kết thúc";
+                                                }
+                                            }, 1000);
+                                            }
+
+                                            countdown();
+                                            ;
+
+                                </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-title"></div>
+                </div>
+                <div class="content-sales">
+                    <div class="content-sales1">
+                        <div class="product-list">
+                    <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/mach-dieu-khien-led-full-copy-25b0e55f-4918-4fd2-b1aa-37f6831d7785.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Mạch điều khiển LED nháy theo nhạc Full Color</h3>
+                          <div class="product-price">
+                            <div class="price1">150.000đ</div>
+                            <div class="price2">120.000đ</div>
+                            <div class="dash"></div>
+                          </div>
+                          
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/74HC00.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">74HC00-DIP14</h3>
+                          <div class="product-price">
+                            <div class="price1">2.500đ</div>
+                            <div class="price2">2.000đ</div>
+                            <div class="dash" style="width: 40px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/74HC08.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">74HC08-DIP14</h3>
+                          <div class="product-price">
+                            <div class="price1">3.000đ</div>
+                            <div class="price2">2.500đ</div>
+                            <div class="dash"style="width: 40px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/74HC32.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">74HC32N-DIP14</h3>
+                          <div class="product-price">
+                            <div class="price1">12.000đ</div>
+                            <div class="price2">10.000đ</div>
+                            <div class="dash" style="width: 50px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/0.56x1 dương chung.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Led 7 thanh 0.56x1 dương chung(RED)</h3>
+                          <div class="product-price">
+                            <div class="price1">6.000đ</div>
+                            <div class="price2">6.000đ</div>
+                            <div class="dash" style="width: 40px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/daycamboard65soi.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Dây cắm board test 65 sợi</h3>
+                          <div class="product-price">
+                            <div class="price1">20.000đ</div>
+                            <div class="price2">14.000đ</div>
+                            <div class="dash" style="width: 50px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/dây cắm board test-10cm.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Dây cắm test board đực-đực 10cm (2.54mm)</h3>
+                          <div class="product-price">
+                            <div class="price1">1.000đ</div>
+                            <div class="price2">800đ</div>
+                            <div class="dash"style="width: 40px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/modul nguồn bo test.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Modul Nguồn bo test</h3>
+                          <div class="product-price">
+                            <div class="price1">32.000đ</div>
+                            <div class="price2">28.000đ</div>
+                            <div class="dash" style="width: 50px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/Điện trở.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">Điện trở vạch màu (1/4W 5%)</h3>
+                          <div class="product-price">
+                            <div class="price1">80đ</div>
+                            <div class="price2">50đ</div>
+                            <div class="dash"style="width: 15px;"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                      </div>
+
+
+
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="/image/IC/74HC04.webp" alt="Product Image">
+                          <div class="product-label">Hot</div>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-title">74HC04 DIP 14</h3>
+                          <div class="product-price">
+                            <div class="price1">150.000đ</div>
+                            <div class="price2">120.000đ</div>
+                            <div class="dash"></div>
+                          </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                          </div>
+                          <button class="product-button">Mua ngay</button>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                    <button class="prev-button">&#8249;</button>
+                    <button class="next-button">&#8250;</button>
+                    </div>
+                    <script>
+                        const container = document.querySelector('.content-sales');
+                        const productSlider = document.querySelector('.content-sales1');
+                        const prevButton = document.querySelector('.prev-button');
+                        const nextButton = document.querySelector('.next-button');
+
+                        prevButton.addEventListener('click', () => {
+                        productSlider.scrollBy({
+                            left: -container.offsetWidth,
+                            behavior: 'smooth'
+                        });
+                        });
+
+                        nextButton.addEventListener('click', () => {
+                        productSlider.scrollBy({
+                            left: container.offsetWidth,
+                            behavior: 'smooth'
+                        });
+                        });
+
+                    </script>
+                </div>
+            </div>
+        <div class="main-product">
+            <div class="main-product1">
+                <div class="right_main-product">
+                    <div class="charts">
+                        <div class="chart-circle">
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                            <canvas id="myChart"></canvas>
+                          
+                            <script>
+                              // Dữ liệu phần trăm của từng phần
+                              const data = [40, 5, 6, 9, 20,20];
+                          
+                              // Màu sắc cho từng phần
+                              const colors = ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', ' #cccc','#f44336'];
+                          
+                              // Tạo biểu đồ hình tròn
+                              const ctx = document.getElementById('myChart').getContext('2d');
+                              const myChart = new Chart(ctx, {
+                                type: 'pie',
+                                data: {
+                                  labels: ['IC số', 'LED 7 Thanh', 'Modul & Sản Phẩm SMD', 'Dụng Cụ Đo','Đầu cose','Break board'],
+                                  datasets: [{
+                                    data: data,
+                                    backgroundColor: colors
+                                  }]
+                                },
+                                options: {
+                                  tooltips: {
+                                    callbacks: {
+                                      label: function(tooltipItem, data) {
+                                        const dataset = data.datasets[tooltipItem.datasetIndex];
+                                        const total = dataset.data.reduce((previousValue, currentValue) => previousValue + currentValue);
+                                        const currentValue = dataset.data[tooltipItem.index];
+                                        const percentage = Math.round((currentValue / total) * 100);
+                                        return percentage + '%';
+                                      }
+                                    }
+                                  }
+                                }
+                              });
+                            </script>
+                        </div>
+                        <div class="bieudoduong">
+                            <canvas id="myChart1"></canvas>
+
+                            <script>
+                              // Dữ liệu các điểm trên biểu đồ
+                              const data1 = {
+                                labels: ['LED', 'Sản Phẩm', 'Trở', 'Modul', 'IC', 'Đầu cose'],
+                                datasets: [{
+                                  label: 'Số lượng bán ra',
+                                  data: [2000, 500, 1200, 3000, 12000, 950],
+                                  backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                  borderColor: 'rgba(75, 192, 192, 1)',
+                                  borderWidth: 1
+                                }]
+                              };
+                          
+                              // Tạo biểu đồ đường
+                              const ctx1 = document.getElementById('myChart1').getContext('2d');
+                              const myChart1 = new Chart(ctx1, {
+                                type: 'line',
+                                data: data1,
+                                options: {
+                                  responsive: true,
+                                  scales: {
+                                    y: {
+                                      beginAtZero: true
+                                    }
+                                  }
+                                }
+                              });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="baivietmoinhat">
+                        <div class="news">
+                            <div class="img-post">
+                            </div>
+                            <div class="title-post">
+                                <h4 class="chuto">Hướng dẫn làm led HAPPY NEW YEAR</h4>
+                                <h6 class="innghieng">50 bình luận</h6>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="img-post"></div>
+                            <div class="title-post">
+                                <h4 class="chuto">Hướng dẫn làm Led ngôi sao</h4>
+                                <h6 class="innghieng">50 bình luận</h6>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="img-post"></div>
+                            <div class="title-post">
+                                <h4 class="chuto">Làm case cho mạch</h4>
+                                <h6 class="innghieng">50 bình luận</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="youtube">
+                       <iframe src="
+                       https://www.youtube.com/embed/huOq-lzKda0" frameborder="0" allowfullscreen height="560" width="315"></iframe>
+                       <!--https://www.youtube.com/embed/VIDEO_ID-->
+                    </div>
+                </div>
+                <div class="left_main-product"></div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
